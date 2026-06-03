@@ -8,14 +8,23 @@
 curl -fsSL https://raw.githubusercontent.com/congbuzuozhuang/9remote-tmux/main/tmux-setup.sh | bash
 ```
 
+## 快捷命令
+
+| 命令 | 作用 |
+|------|------|
+| `tn` | 创建 work 会话 |
+| `ta` | 接入已有会话 |
+| `tl` | 查看会话列表 |
+| `tk` | 关闭会话 |
+
 ## 使用方式
 
 ```bash
 # 电脑桌面终端：创建持久会话
-tmux new -s work
+tn
 
 # 手机 9Remote 终端：接入同一个会话
-tmux attach -t work
+ta
 
 # 在 tmux 里创建新窗口
 Ctrl+B  C
@@ -29,9 +38,3 @@ Ctrl+B  C
 - 状态栏精简：底部只显示窗口编号和名称，不占用小屏空间
 - 256 色支持
 - 50000 行回滚历史
-
-## 状态栏截图
-
-```
- 1:bash | 2:server | 3:vim
-```
